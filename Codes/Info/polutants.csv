@@ -1,0 +1,17 @@
+,Code,Name,Abbreviation,Unit,Measurement Technique,MeasTech Code,Measurement_Technique
+0,01,Dióxido de Azufre,SO2,μg/m3,,38,Fluorescencia ultravioleta
+1,06,Monóxido de Carbono,CO,mg/m3,,48,Absorción infrarroja
+2,07,Monóxido de Nitrógeno,NO,μg/m3,,08,Quimioluminiscencia
+3,08,Dióxido de Nitrógeno,NO2,μg/m3,,08,Quimioluminiscencia
+4,09,Partículas < 2.5 μm,PM2.5,μg/m3,,47,Microbalanza
+5,10,Partículas < 10 μm,PM10,μg/m3,,47,Microbalanza
+6,12,Óxidos de Nitrógeno,NOx,μg/m3,,08,Quimioluminiscencia
+7,14,Ozono,O3,μg/m3,,06,Absorción ultravioleta
+8,20,Tolueno,TOL,μg/m3,,59,Cromatografía de gases
+9,30,Benceno,BEN,μg/m3,,59,Cromatografía de gases
+10,35,Etilbenceno,EBE,μg/m3,,59,Cromatografía de gases
+11,37,Metaxileno,MXY,μg/m3,,59,Cromatografía de gases
+12,38,Paraxileno,PXY,μg/m3,,59,Cromatografía de gases
+13,39,Ortoxileno,OXY,μg/m3,,59,Cromatografía de gases
+14,42,Hidrocarburos totales (hexano),TCH,mg/m3,,02,Ionización de llama
+15,43,Metano,CH4,mg/m3,,02,Ionización de llama
