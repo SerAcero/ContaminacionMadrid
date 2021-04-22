@@ -1,6 +1,6 @@
 # This file defines the polutants dataframe and the estaciones dataframe
-#
-
+# the information comes from the PDF in the Info folder:
+# Interprete_ficheros_calidad_del_aire_global.pdf
 
 import numpy as np
 import os
