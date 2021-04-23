@@ -5,7 +5,15 @@ import os
 
 # Not needed for now, comment
 # point to output directory
-outpath = '../Data/Zips/'
+
+try:
+    os.system('mkdir -p ../Data/Raw/Zips')
+except OSError as err:
+    print('OS error: {0}'.format(err))
+
+
+
+outpath = '../Data/Raw/Zips/'
 url = 'https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=f3c0f7d512273410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default'
 mbyte=1024*1024
 
@@ -35,27 +43,28 @@ for name in soup.findAll('a', href=True):
 ############## This worked! Let's commit it
 
 
+dataraw = '../Data/Raw/'
 # Unzipping everything
-os.system('unzip ../Data/Zips/\*.zip -d ../Data/')
+#os.system('unzip ../Data/Zips/\*.zip -d ../Data/')
+os.system('unzip ' + outpath + '/\*.zip -d ' + dataraw)
 
 # Renaming the folders that were created when unzipping
 for i in range(3,10):
-    os.system('mv ../Data/Aдo0' + str(i) + '/ ../Data/Year200' + str(i) + '/')
+    os.system('mv ' + dataraw + 'Aдo0' + str(i) + '/ ' + dataraw + 'Year200' + str(i) + '/')
 for i in range(0,2):
-    os.system('mv ../Data/Aдo1' + str(i) + '/ ../Data/Year201' + str(i) + '/')
+    os.system('mv ' + dataraw + 'Aдo1' + str(i) + '/ ' + dataraw + 'Year201' + str(i) + '/')
 
 # Creating the folders that were not created when unzipping
 for i in range(12,22):
-    os.system('mkdir ../Data/Year20' + str(i) + '/')
+    os.system('mkdir ' + dataraw + 'Year20' + str(i) + '/')
 for i in range(1,3):
-    os.system('mkdir ../Data/Year200' + str(i) + '/')
+    os.system('mkdir ' + dataraw + 'Year200' + str(i) + '/')
 
 
 # Gathering all file names of the folder Data
 from os import listdir
 from os.path import isfile, join
-mypath = '../Data/'
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+onlyfiles = [f for f in listdir(dataraw) if isfile(join(dataraw, f))]
 
 # Gathering those data files that were not unzipped into a folder and 
 # moving them into a folder
@@ -66,10 +75,10 @@ for f in onlyfiles:
         for i in range(0,22):
             if i < 10:
                 if '0'+str(i) in f:
-                    os.system('mv ../Data/' + f +' ../Data/Year200' + str(i) + '/' + f)
+                    os.system('mv ' + dataraw + f +' ' + dataraw + 'Year200' + str(i) + '/' + f)
             else:        
                 if str(i) in f:
-                    os.system('mv ../Data/' + f +' ../Data/Year20'  + str(i) + '/' + f)
+                    os.system('mv ' + dataraw + f +' ' + dataraw + 'Year20'  + str(i) + '/' + f)
             
 # Standardize the names of the data files MM-YYYY.format
 months = {'ene': '01', 'feb': '02', 'mar': '03', 'abr': '04',
@@ -80,7 +89,7 @@ months = {'ene': '01', 'feb': '02', 'mar': '03', 'abr': '04',
 for i in range(1,22):
     # case of 2001 to 2009
     if i < 10:
-        mypath = '../Data/Year200' + str(i)
+        mypath = '../Data/Raw/Year200' + str(i)
         onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
         # loop through months
         for mo in months.keys():
@@ -90,7 +99,7 @@ for i in range(1,22):
                     os.system('mv ' + mypath + '/' + f + ' ' + mypath +
                                     '/' + months[mo] + '-' + '200' + str(i) + f[-4:])
     else:
-        mypath = '../Data/Year20' + str(i)
+        mypath = '../Data/Raw/Year20' + str(i)
         onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
         for mo in months.keys():
             for f in onlyfiles:
