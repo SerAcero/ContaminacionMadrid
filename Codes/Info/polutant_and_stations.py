@@ -72,7 +72,7 @@ polutants.Unit = polutant_unit
 polutants['Measurement_Technique'] = meastech
 polutants['MeasTech Code'] = meastech_code
 
-polutants.to_csv('polutants.csv')
+polutants.to_csv('polutants.csv', index = False)
 print(polutants)
 
 # Polutant Dataframe defined
@@ -128,7 +128,7 @@ estaciones.Name = estaciones_name
 estaciones['Decomission Date'].iloc[which_decomission] = when_decomission
 estaciones['Start Date']      .iloc[which_alta] = when_alta
 
-estaciones.to_csv('estaciones.csv')
+estaciones.to_csv('estaciones.csv', index = False)
 print(estaciones)
 # Estaciones dataframe defined
 

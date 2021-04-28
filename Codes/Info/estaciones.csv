@@ -1,39 +1,39 @@
-,Code,Name,Decomission Date,Start Date
-0,['001'],Pº. Recoletos,04/05/2009 (14:00 h.),
-1,['002'],Glta. de Carlos V,04/12/2006 (11:00 h.),
-2,"['003', '035']",Pza. del Carmen,,
-3,['004'],Pza. de España,,
-4,"['005', '039']",Barrio del Pilar,,
-5,['006'],Pza. Dr. Marañón,27/11/2009 (08:00 h.),
-6,['007'],Pza. M. de Salamanca,30/12/2009 (14:00 h.),
-7,['008'],Escuelas Aguirre,,
-8,['009'],Pza. Luca de Tena,07/12/2009 (08:00 h.),
-9,"['010', '038']",Cuatro Caminos,,
-10,['011'],Av. Ramón y Cajal,,
-11,['012'],Pza. Manuel Becerra,30/12/2009 (14:00 h.),
-12,"['013', '040']",Vallecas,,
-13,['014'],Pza. Fdez. Ladreda,02/12/2009 (09:00 h.),
-14,['015'],Pza. Castilla,17/10/2008 (11:00 h.),
-15,['016'],Arturo Soria,,
-16,['017'],Villaverde Alto,,
-17,['018'],C/ Farolillo,,
-18,['019'],Huerta Castañeda,30/12/2009 (13:00 h.),
-19,"['020', '036']",Moratalaz,,
-20,['021'],Pza. Cristo Rey,04/12/2009 (14:00 h.),
-21,['022'],Pº. Pontones,20/11/2009 (10:00 h.),
-22,['023'],Final C/ Alcalá,30/12/2009 (14:00 h.),
-23,['024'],Casa de Campo,,
-24,['025'],Santa Eugenia,16/11/2009 (10:00 h.),
-25,['026'],Urb. Embajada (Barajas),11/01/2010 (09:00 h.),
-26,['027'],Barajas,,
-27,['047'],Méndez Álvaro,,21/12/2009 (00:00 h.)
-28,['048'],Pº. Castellana,,01/06/2010 (00:00 h.)
-29,['049'],Retiro,,01/01/2010 (00:00 h.)
-30,['050'],Pza. Castilla,,08/02/2010 (00:00 h.)
-31,['054'],Ensanche Vallecas,,11/12/2009 (00:00 h.)
-32,['055'],Urb. Embajada (Barajas),,20/01/2010 (15:00 h.)
-33,['056'],Pza. Elíptica,,18/01/2010 (12:00 h.)
-34,['057'],Sanchinarro,,24/11/2009 (00:00 h.)
-35,['058'],El Pardo,,30/11/2009 (13:00 h.)
-36,['059'],Parque Juan Carlos I,,14/12/2009 (00:00 h.)
-37,"['086', '060']",Tres Olivos,,14/01/2010 (13:00 h.) 
+Code,Name,Decomission Date,Start Date
+['001'],Pº. Recoletos,04/05/2009 (14:00 h.),
+['002'],Glta. de Carlos V,04/12/2006 (11:00 h.),
+"['003', '035']",Pza. del Carmen,,
+['004'],Pza. de España,,
+"['005', '039']",Barrio del Pilar,,
+['006'],Pza. Dr. Marañón,27/11/2009 (08:00 h.),
+['007'],Pza. M. de Salamanca,30/12/2009 (14:00 h.),
+['008'],Escuelas Aguirre,,
+['009'],Pza. Luca de Tena,07/12/2009 (08:00 h.),
+"['010', '038']",Cuatro Caminos,,
+['011'],Av. Ramón y Cajal,,
+['012'],Pza. Manuel Becerra,30/12/2009 (14:00 h.),
+"['013', '040']",Vallecas,,
+['014'],Pza. Fdez. Ladreda,02/12/2009 (09:00 h.),
+['015'],Pza. Castilla,17/10/2008 (11:00 h.),
+['016'],Arturo Soria,,
+['017'],Villaverde Alto,,
+['018'],C/ Farolillo,,
+['019'],Huerta Castañeda,30/12/2009 (13:00 h.),
+"['020', '036']",Moratalaz,,
+['021'],Pza. Cristo Rey,04/12/2009 (14:00 h.),
+['022'],Pº. Pontones,20/11/2009 (10:00 h.),
+['023'],Final C/ Alcalá,30/12/2009 (14:00 h.),
+['024'],Casa de Campo,,
+['025'],Santa Eugenia,16/11/2009 (10:00 h.),
+['026'],Urb. Embajada (Barajas),11/01/2010 (09:00 h.),
+['027'],Barajas,,
+['047'],Méndez Álvaro,,21/12/2009 (00:00 h.)
+['048'],Pº. Castellana,,01/06/2010 (00:00 h.)
+['049'],Retiro,,01/01/2010 (00:00 h.)
+['050'],Pza. Castilla,,08/02/2010 (00:00 h.)
+['054'],Ensanche Vallecas,,11/12/2009 (00:00 h.)
+['055'],Urb. Embajada (Barajas),,20/01/2010 (15:00 h.)
+['056'],Pza. Elíptica,,18/01/2010 (12:00 h.)
+['057'],Sanchinarro,,24/11/2009 (00:00 h.)
+['058'],El Pardo,,30/11/2009 (13:00 h.)
+['059'],Parque Juan Carlos I,,14/12/2009 (00:00 h.)
+"['086', '060']",Tres Olivos,,14/01/2010 (13:00 h.) 
