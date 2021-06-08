@@ -5,22 +5,27 @@ import os
 
 # Not needed for now, comment
 # point to output directory
-
 try:
     os.system('mkdir -p ../Data/Raw/Zips')
 except OSError as err:
     print('OS error: {0}'.format(err))
 
 
-
+# Output path
 outpath = '../Data/Raw/Zips/'
+
+# URL of data
 url = 'https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=f3c0f7d512273410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default'
+
 mbyte=1024*1024
 
 print( 'Reading: ', url[0:30], '...')
 html = requests.get(url).text
 soup = BeautifulSoup(html, features = 'lxml')
 
+
+# This loop finds all hrefs in the webpage and downloads
+# those which end with .zip into outpath
 print ('Processing: ', url[0:30], '...')
 for name in soup.findAll('a', href=True):
     zipurl = name['href']
